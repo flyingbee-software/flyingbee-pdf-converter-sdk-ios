@@ -1,0 +1,364 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A5D7A7F22266CCA00331486 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5D7A7E22266CCA00331486 /* Launch Screen.storyboard */; };
+		1A6B592128B8C6AC0078B8F0 /* FPFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B591F28B8C6AC0078B8F0 /* FPFAppDelegate.m */; };
+		1A6B592328B8C6AC0078B8F0 /* FPFAppDelegate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B592028B8C6AC0078B8F0 /* FPFAppDelegate.xib */; };
+		1A9DB6B728268D8100D2ACCE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9DB6B528268D7D00D2ACCE /* libz.tbd */; };
+		1AC3A4A020747A5C00B24FC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC3A49A20747A5800B24FC7 /* UIKit.framework */; };
+		1AC3A4A120747A5C00B24FC7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC3A49420747A4C00B24FC7 /* CoreFoundation.framework */; };
+		1AC3A4A220747A5C00B24FC7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC3A49520747A4C00B24FC7 /* CoreGraphics.framework */; };
+		1AC3A4A320747A5C00B24FC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC3A49620747A4C00B24FC7 /* QuartzCore.framework */; };
+		1AC3A4AA20747FAE00B24FC7 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC3A4A820747FAB00B24FC7 /* MobileCoreServices.framework */; };
+		1AC3A5012074D30600B24FC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A4E6207484D200B24FC7 /* main.m */; };
+		1AC3A5022074D30900B24FC7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3A4E7207484D200B24FC7 /* Images.xcassets */; };
+		1AC3A5032074D31200B24FC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3A4DE207484D200B24FC7 /* InfoPlist.strings */; };
+		1AC3A5052074D31A00B24FC7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AC3A4E0207484D200B24FC7 /* MainViewController.xib */; };
+		1AC3A5062074D31C00B24FC7 /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A4E4207484D200B24FC7 /* MainViewController.mm */; };
+		1AC5B3F02EE943EB002EE710 /* TestPDFFiles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1AC5B3EF2EE943E0002EE710 /* TestPDFFiles.bundle */; };
+		1AC7B72E30413F4800C5A7DC /* FPPDFFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC7B72C30413F3F00C5A7DC /* FPPDFFramework.xcframework */; };
+		1AC7B72F30413F4800C5A7DC /* FPPDFFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC7B72C30413F3F00C5A7DC /* FPPDFFramework.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1AC5B0632EE9129C002EE710 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1AC7B72F30413F4800C5A7DC /* FPPDFFramework.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A3EB183206DED3D00581D8B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1A3EB1852071B6DD00581D8B /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1A3EB1872071B6F500581D8B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		1A5D7A7E22266CCA00331486 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1A6B591E28B8C6AC0078B8F0 /* FPFAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPFAppDelegate.h; sourceTree = "<group>"; };
+		1A6B591F28B8C6AC0078B8F0 /* FPFAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPFAppDelegate.m; sourceTree = "<group>"; };
+		1A6B592028B8C6AC0078B8F0 /* FPFAppDelegate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPFAppDelegate.xib; sourceTree = "<group>"; };
+		1A9DB6B528268D7D00D2ACCE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1AC3A49420747A4C00B24FC7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		1AC3A49520747A4C00B24FC7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AC3A49620747A4C00B24FC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1AC3A49A20747A5800B24FC7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1AC3A4A820747FAB00B24FC7 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1AC3A4DF207484D200B24FC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AC3A4E0207484D200B24FC7 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1AC3A4E3207484D200B24FC7 /* FPPDFFrameworkDemoiOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "FPPDFFrameworkDemoiOS-Info.plist"; sourceTree = "<group>"; };
+		1AC3A4E4207484D200B24FC7 /* MainViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		1AC3A4E6207484D200B24FC7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AC3A4E7207484D200B24FC7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AC3A4E8207484D200B24FC7 /* FPPDFFrameworkDemoiOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FPPDFFrameworkDemoiOS-Prefix.pch"; sourceTree = "<group>"; };
+		1AC3A4EA207484D200B24FC7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1AC5B3EF2EE943E0002EE710 /* TestPDFFiles.bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestPDFFiles.bundle; sourceTree = "<group>"; };
+		1AC7B72C30413F3F00C5A7DC /* FPPDFFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FPPDFFramework.xcframework; path = FPPDFFrameworkDemoiOS/FPPDFFramework.xcframework; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* FPPDFFrameworkDemoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FPPDFFrameworkDemoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC7B72E30413F4800C5A7DC /* FPPDFFramework.xcframework in Frameworks */,
+				1AC3A4A120747A5C00B24FC7 /* CoreFoundation.framework in Frameworks */,
+				1A9DB6B728268D8100D2ACCE /* libz.tbd in Frameworks */,
+				1AC3A4AA20747FAE00B24FC7 /* MobileCoreServices.framework in Frameworks */,
+				1AC3A4A320747A5C00B24FC7 /* QuartzCore.framework in Frameworks */,
+				1AC3A4A020747A5C00B24FC7 /* UIKit.framework in Frameworks */,
+				1AC3A4A220747A5C00B24FC7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* FPPDFFrameworkDemoiOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AC3A4DC207484D200B24FC7 /* FPPDFFrameworkDemoiOS */ = {
+			isa = PBXGroup;
+			children = (
+				1AC5B3EF2EE943E0002EE710 /* TestPDFFiles.bundle */,
+				1A6B591E28B8C6AC0078B8F0 /* FPFAppDelegate.h */,
+				1A6B591F28B8C6AC0078B8F0 /* FPFAppDelegate.m */,
+				1A6B592028B8C6AC0078B8F0 /* FPFAppDelegate.xib */,
+				1AC3A4EA207484D200B24FC7 /* MainViewController.h */,
+				1AC3A4E4207484D200B24FC7 /* MainViewController.mm */,
+				1AC3A4E0207484D200B24FC7 /* MainViewController.xib */,
+				1AFC44E12295445D0073446D /* Supporting Files */,
+			);
+			path = FPPDFFrameworkDemoiOS;
+			sourceTree = "<group>";
+		};
+		1AFC44E12295445D0073446D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AC3A4E3207484D200B24FC7 /* FPPDFFrameworkDemoiOS-Info.plist */,
+				1AC3A4E8207484D200B24FC7 /* FPPDFFrameworkDemoiOS-Prefix.pch */,
+				1AC3A4E7207484D200B24FC7 /* Images.xcassets */,
+				1AC3A4DE207484D200B24FC7 /* InfoPlist.strings */,
+				1A5D7A7E22266CCA00331486 /* Launch Screen.storyboard */,
+				1AC3A4E6207484D200B24FC7 /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				1AC3A4DC207484D200B24FC7 /* FPPDFFrameworkDemoiOS */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AC7B72C30413F3F00C5A7DC /* FPPDFFramework.xcframework */,
+				1A3EB1872071B6F500581D8B /* AssetsLibrary.framework */,
+				1A3EB183206DED3D00581D8B /* AVFoundation.framework */,
+				1AC3A49420747A4C00B24FC7 /* CoreFoundation.framework */,
+				1AC3A49520747A4C00B24FC7 /* CoreGraphics.framework */,
+				1A3EB1852071B6DD00581D8B /* CoreMedia.framework */,
+				1A9DB6B528268D7D00D2ACCE /* libz.tbd */,
+				1AC3A4A820747FAB00B24FC7 /* MobileCoreServices.framework */,
+				1AC3A49620747A4C00B24FC7 /* QuartzCore.framework */,
+				1AC3A49A20747A5800B24FC7 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* FPPDFFrameworkDemoiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FPPDFFrameworkDemoiOS" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				1AC5B0632EE9129C002EE710 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FPPDFFrameworkDemoiOS;
+			productName = RotatePhoto;
+			productReference = 1D6058910D05DD3D006BFB54 /* FPPDFFrameworkDemoiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "Flyingbee Software Co., Ltd.";
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 3H8C8HR656;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FPPDFFrameworkDemoiOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				fr,
+				ja,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* FPPDFFrameworkDemoiOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC3A5032074D31200B24FC7 /* InfoPlist.strings in Resources */,
+				1AC3A5022074D30900B24FC7 /* Images.xcassets in Resources */,
+				1AC5B3F02EE943EB002EE710 /* TestPDFFiles.bundle in Resources */,
+				1AC3A5052074D31A00B24FC7 /* MainViewController.xib in Resources */,
+				1A6B592328B8C6AC0078B8F0 /* FPFAppDelegate.xib in Resources */,
+				1A5D7A7F22266CCA00331486 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AC3A5062074D31C00B24FC7 /* MainViewController.mm in Sources */,
+				1A6B592128B8C6AC0078B8F0 /* FPFAppDelegate.m in Sources */,
+				1AC3A5012074D30600B24FC7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1AC3A4DE207484D200B24FC7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AC3A4DF207484D200B24FC7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 10.3.6;
+				DEVELOPMENT_TEAM = 3H8C8HR656;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPPDFFrameworkDemoiOS/Supporting Files/$(TARGET_NAME)-Prefix.pch";
+				INFOPLIST_FILE = "FPPDFFrameworkDemoiOS/Supporting Files/FPPDFFrameworkDemoiOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SDK Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 10.3.6;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flyingbee.FPPDFConverterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 10.3.6;
+				DEVELOPMENT_TEAM = 3H8C8HR656;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FPPDFFrameworkDemoiOS/Supporting Files/$(TARGET_NAME)-Prefix.pch";
+				INFOPLIST_FILE = "FPPDFFrameworkDemoiOS/Supporting Files/FPPDFFrameworkDemoiOS-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SDK Demo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MARKETING_VERSION = 10.3.6;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.flyingbee.FPPDFConverterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../FPFoundation/FPFoundation,
+					../FPPDFFramework/FPPDFFramework,
+					../FPPDFParser/FPPDFCore/FPPDFOptions,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../FPFoundation/FPFoundation,
+					../FPPDFFramework/FPPDFFramework,
+					../FPPDFParser/FPPDFCore/FPPDFOptions,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "FPPDFFrameworkDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "FPPDFFrameworkDemoiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

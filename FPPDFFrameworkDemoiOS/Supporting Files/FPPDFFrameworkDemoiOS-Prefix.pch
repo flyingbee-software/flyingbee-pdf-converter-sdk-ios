@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'FPPDFFrameworkDemoiOS' target.
+//
+
+#ifdef __OBJC__
+    // Import Foundation and UIKit frameworks for all Objective-C files
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+
+
+// Enable dynamic library (Dylib) mode
+#ifndef FP_SDK_VERSION_Dylib
+#define FP_SDK_VERSION_Dylib 1
+#endif
+
