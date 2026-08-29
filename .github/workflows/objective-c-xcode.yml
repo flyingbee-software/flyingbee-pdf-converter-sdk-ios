@@ -5,27 +5,53 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  PROJECT: FPPDFFrameworkDemoiOS.xcodeproj
+  SCHEME: FPPDFFrameworkDemoiOS
 
 jobs:
   build:
-    name: Build and analyse default scheme using xcodebuild command
+    name: Build and analyse FPPDFFrameworkDemoiOS scheme
     runs-on: macos-latest
+    timeout-minutes: 45
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set Default Scheme
-        run: |
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo $default | cat >default
-          echo Using default scheme: $default
-      - name: Build
-  env:
-    scheme: ${{ 'default' }}
-  run: |
-    if [ $scheme = default ]; then scheme=$(cat default); fi
-    if [ "`ls -A | grep -i \.xcworkspace\$`" ]; then filetype_parameter="workspace" && file_to_build="`ls -A | grep -i \.xcworkspace\$`"; else filetype_parameter="project" && file_to_build="`ls -A | grep -i \.xcodeproj\$`"; fi
-    file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
-    xcodebuild clean build analyze -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination 'generic/platform=iOS Simulator' | xcpretty && exit ${PIPESTATUS[0]}
 
+      - name: Show environment info
+        run: |
+          xcodebuild -version
+          xcodebuild -list -project "$PROJECT"
+
+      - name: Build and analyze
+        run: |
+          set -o pipefail
+          build() {
+            xcodebuild clean build analyze \
+              -project "$PROJECT" \
+              -scheme "$SCHEME" \
+              -destination "generic/platform=iOS Simulator" \
+              -configuration Debug \
+              CODE_SIGNING_ALLOWED=NO \
+              | tee xcodebuild.log
+          }
+          if command -v xcbeautify >/dev/null 2>&1; then
+            build | xcbeautify
+          else
+            build
+          fi
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-log
+          path: xcodebuild.log
+          if-no-files-found: ignore
